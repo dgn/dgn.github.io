@@ -18,14 +18,14 @@
         </div>
       </header>
 
-      <main role="main">
+      <main role="main" style="display:none">
         <h1>Daniel Grimm</h1>
         <p class="lead">Software Engineer</p>
         <p class="lead">
           <a id="mailbutton" href="mailto:Daniel%20Grimm%3Cmail@danielgrimm.io%3E?subject=Hi" class="btn btn-secondary">
             <span><i class="fas fa-fw fa-envelope fa-2x fa-inverse"></i></span>
           </a>
-          <a data-toggle="tooltip" title="My GnuPG public key. Fingerprint:<br/>7C A5 81 4C 44 28 5C CC 89 2B 8B 64 16 9C 19 2A A0 A6 90 6B" id="keybutton" href="Daniel%20Grimm%20mail%40danielgrimm.io%20%280x169C192AA0A6906B%29%20pub.pem" class="btn btn-secondary" download>
+          <a id="keybutton" href="Daniel%20Grimm%20mail%40danielgrimm.io%20%280x169C192AA0A6906B%29%20pub.pem" class="btn btn-secondary" download>
               <span><i class="fas fa-fw fa-key fa-2x fa-inverse"></i></span>
           </a>
           <a id="githubbutton" href="https://github.com/dgn" class="btn btn-secondary">
@@ -44,16 +44,12 @@
       </footer>
     </div>
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function() {
-        $("#keybutton").tooltip({
-          placement: 'bottom',
-          html: true,
-          delay: { "show": 0, "hide": 2000 }
-        })
+        $("main").fadeIn("slow")
       })
     </script>
   </body>
