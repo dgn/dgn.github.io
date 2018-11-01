@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>danielgrimm.io</title>
+  </head>
+  <body class="text-center">
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div class="inner">
+        </div>
+      </header>
+
+      <main role="main">
+        <h1>Daniel Grimm</h1>
+        <p class="lead">Software Engineer</p>
+        <p class="lead">
+          <a id="mailbutton" href="mailto:Daniel%20Grimm%3Cmail@danielgrimm.io%3E?subject=Hi" class="btn btn-secondary">
+            <span><i class="fas fa-fw fa-envelope fa-2x fa-inverse"></i></span>
+          </a>
+          <a data-toggle="tooltip" title="My GnuPG public key. Fingerprint:<br/>7C A5 81 4C 44 28 5C CC 89 2B 8B 64 16 9C 19 2A A0 A6 90 6B" id="keybutton" href="Daniel%20Grimm%20mail%40danielgrimm.io%20%280x169C192AA0A6906B%29%20pub.pem" class="btn btn-secondary" download>
+              <span><i class="fas fa-fw fa-key fa-2x fa-inverse"></i></span>
+          </a>
+          <a id="githubbutton" href="https://github.com/dgn" class="btn btn-secondary">
+            <span><i class="fab fa-fw fa-github fa-2x fa-inverse"></i></span>
+          </a>
+          <a id="linkedinbutton" href="https://www.linkedin.com/in/daniel-grimm-8b879463/" class="btn btn-secondary">
+            <span><i class="fab fa-fw fa-linkedin fa-2x fa-inverse"></i></span>
+          </a>
+        </p>
+      </main>
+
+      <footer class="mt-auto">
+        <div class="inner">
+          <p>Made with &#10084; in Berlin</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $("#keybutton").tooltip({
+        placement: 'bottom',
+        html: true,
+        delay: { "show": 0, "hide": 2000 }
+      })
+    </script>
+  </body>
+</html>

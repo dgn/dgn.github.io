@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  background-color: #333;
+  color: #ddd;
+}
+
+.btn-secondary,
+.btn-secondary:focus {
+  color: #333;
+  background-color: #333;
+  border: .05rem solid #333;
+}
+
+.btn-secondary:hover,
+.btn-secondary.hover {
+  color: #333;
+  background-color: #666;
+  border: .05rem solid #666;
+}
