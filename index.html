@@ -39,7 +39,7 @@
 
       <footer class="mt-auto">
         <div class="inner">
-          <p>Made with &#10084; in Berlin</p>
+          <p></p>
         </div>
       </footer>
     </div>
@@ -48,10 +48,12 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      $("#keybutton").tooltip({
-        placement: 'bottom',
-        html: true,
-        delay: { "show": 0, "hide": 2000 }
+      $(document).ready(function() {
+        $("#keybutton").tooltip({
+          placement: 'bottom',
+          html: true,
+          delay: { "show": 0, "hide": 2000 }
+        })
       })
     </script>
   </body>
